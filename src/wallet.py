@@ -17,4 +17,4 @@ class Wallet(object):
         self.balance += amount
 
     def mult_cash(self, amount):
-        self.balance * amount
+        return self.balance * amount
