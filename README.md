@@ -1,3 +1,11 @@
-Adding randon information to this project.
+## This project is to study Sonarqube
 
-Measures on New Code will appear after the second analysis of this branch.
+The purpose of this project is to test sonarqube community and GitActions.
+
+## Sonarqube and Python3 Coverage
+
+## Github bot
+
+## sonar-project.properties
+
+- sonar.sources=./src Only scan changes in the src folder.
