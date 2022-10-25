@@ -10,3 +10,23 @@ def test_default_initial_amount():
 def test_setting_initial_amount():
     wallet = Wallet(100)
     assert wallet.balance == 100
+
+def test_wallet_add_cash():
+    wallet = Wallet(10)
+    wallet.add_cash(90)
+    assert wallet.balance == 100
+
+def test_mult_cash():
+    wallet = Wallet(10)
+    result = wallet.mult_cash(20)
+    assert result == 200
+
+def test_wallet_spend_cash():
+    wallet = Wallet(20)
+    wallet.spend_cash(10)
+    assert wallet.balance == 10
+
+def test_wallet_spend_cash_raises_exception_on_insufficient_amount():
+    wallet = Wallet()
+    with pytest.raises(InsufficientAmount):
+        wallet.spend_cash(100)
