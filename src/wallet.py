@@ -18,3 +18,9 @@ class Wallet(object):
         
     def mult_cash(self, amount):
         return self.balance * amount
+
+    def double_cash(self, amount):
+        return self.balance * 2
+
+    def triple_cash(self, amount):
+        return
