@@ -15,8 +15,3 @@ def test_wallet_add_cash():
     wallet = Wallet(10)
     wallet.add_cash(90)
     assert wallet.balance == 100
-
-def test_wallet_spend_cash():
-    wallet = Wallet(20)
-    wallet.spend_cash(10)
-    assert wallet.balance == 10
